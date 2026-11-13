@@ -1,0 +1,8 @@
+.build/
+dist/
+.DS_Store
+firmware/build/
+firmware/managed_components/
+firmware/sdkconfig
+firmware/.idf/
+*.local.json

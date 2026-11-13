@@ -1,0 +1,22 @@
+官方 BSP
+来源：https://github.com/FoloToy/ai-passport
+固定提交：1c9e8b12c9c11a48419ea6c322c8a5d386d8ff22
+目录：firmware/components/bsp（未修改官方驱动）
+许可：MIT，完整版权与许可保存在 components/bsp/LICENSE。
+依赖锁文件沿用同一提交的 ESP-IDF 5.5.3 / ESP32-C3 版本。
+本项目没有复制官方 demo 菜单、界面或应用。
+
+Passport Bitmap SC 16 字体
+来源：Noto Sans CJK SC Regular 2.004
+Copyright © 2014-2021 Adobe (http://www.adobe.com/).
+上游：https://github.com/notofonts/noto-cjk
+固定提交：f8d157532fbfaeda587e826d4cd5b21a49186f7c
+源文件：Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf
+源文件 SHA256：2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b
+许可：SIL Open Font License 1.1（assets/OFL.txt）。位图衍生物沿用该许可。
+衍生字体名：Passport Bitmap SC 16，不使用上游保留字体名作为新字体名。
+生成器：tools/make_font.py，Pillow 11.3.0 / fonttools 4.59.1。
+输出：main/noto16.bin，2,162,688 字节，BMP 固定索引 1bpp，不占完整字库 RAM。
+输出 SHA256：4744f911809c140c460058fe419962dc24d3d14951ba8d8704059a2cba6c84cc
+覆盖上游全部已映射 BMP 字符（含常用简繁中文、CJK 统一汉字和扩展 A 的上游字形），不只是静态界面用字。
+未映射字符及非 BMP 字符以可见 [U+XXXX] 转义显示，不会静默缺字。
